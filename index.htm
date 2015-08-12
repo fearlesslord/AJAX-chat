@@ -1,0 +1,29 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+  <div id="chat" >
+    <br/>Name: <input type="text" id="name"/> <input type="button" id="send" value="Send"/>
+    <div id="write" ><textarea id="message" cols="50" rows="2"></textarea></div><br/>
+    <div id="messages"><div class="message"></div> </div>
+    <br/><input type="button" value="Get last five messages" id="getMoreMessages" />
+  </div>
+
+  <script type="text/template" id="template">
+    {{#allMessages}}
+      <div class="message">
+        <div class="messagehead">Name: {{login}} at {{time}} </div>
+        <div class="messagecontent"> {{message}} </div>
+        <div class="messageId">{{id}} </div>
+      </div>
+    {{/allMessages}}
+  </script>
+
+<script type="text/javascript" src="js/mustache.js"></script>
+<script type="text/javascript" src="js/default.js"></script>
+
+</body>
+</html>

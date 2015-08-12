@@ -1,0 +1,40 @@
+.message {
+  overflow:hidden;
+  width:498px;
+  margin-bottom:5px;
+  border:1px solid #999;
+}
+
+#message {
+  width: 100%;
+}
+
+.messagehead {
+  overflow:hidden;
+  background: #fffa94;
+  width:500px;
+}
+
+.messagecontent {
+  overflow:hidden;
+  width:496px;
+}
+
+.messageId {
+  /*display: none;*/
+  background: #ced4ff;
+}
+
+.messages {
+  margin: 0 auto;
+}
+
+#chat {
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#write {
+  text-align:center;
+}
